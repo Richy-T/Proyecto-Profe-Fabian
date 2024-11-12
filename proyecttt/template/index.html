@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="content-type" content="text/html; charset=utf-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Personas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gestión de Personas</h1>
+    </header>
+    <main>
+        <section id="form-section">
+            <h2>Registro de Persona</h2>
+            <form id="personaForm">
+                <label for="Cedula">Cedula:</label>
+                <input type="text" id="cedula" name="Cedula" required>
+
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="nombre" name="Nombre" required>
+
+                <label for="Edad">Edad:</label>
+                <input type="number" id="edad" name="Edad" required>
+
+                <label for="Profesion">Profesión:</label>
+                <input type="text" id="profesion" name="Profesion" required>
+
+                <button type="submit" class="submitbtn" id="submitBtn">Guardar</button>
+                <!-- <button type="button" id="updateBtn">Actualizar</button> -->
+            </form>
+
+        </section>
+
+        <section id="table-section">
+            <h2>Listado de Personas</h2>
+            <table id="personaTable">
+                <thead>
+                    <tr>
+                        <th>Cédula</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Profesión</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
